@@ -5,12 +5,12 @@ from app import application
 
 @application.route('/')
 def index():
-    return "Hej"
+    return "Hi"
 
 
-@application.route('/time')
+@application.route('/pink')
 def show_time():
     return render_template(
-        'time.html',
+        'pink.html',
         now=time.strftime("%c")
     )
