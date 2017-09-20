@@ -1,3 +1,4 @@
+import json
 import time
 
 from flask import render_template
@@ -20,11 +21,10 @@ def show_time():
 
 @application.route('/stock')
 def stock():
-
-    stocks = [{"name": "Spasmalgon", "qt": "1", "form": "Tablet", "action": "Spasmolytic drugs"},
-              {"name": "Spasmalgon2", "qt": "2", "form": "Tablet2", "action": "Spasmolytic 2drugs"},
-              {"name": "Spasmalgon3", "qt": "3", "form": "Tablet3", "action": "Spasmolytic 2drugs"}]
+    with open('app/data/stock.json') as data_file:
+        data = json.load(data_file)
+    print(data)
     return render_template(
         'stock.html',
-        stocks=stocks
+        stocks=data
     )
