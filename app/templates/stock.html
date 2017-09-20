@@ -20,18 +20,14 @@
         </tr>
       </thead>
       <tbody>
+        {% for stock in stocks %}
         <tr>
-          <td>{{stocks[0]["name"]}}</td>
-          <td>{{stocks[0]["qt"]}}</td>
-          <td>{{stocks[0]["form"]}}</td>
-          <td>{{stocks[0]["action"]}}</td>
+          <td>{{stock["name"]}}</td>
+          <td>{{stock["qt"]}}</td>
+          <td>{{stock["form"]}}</td>
+          <td>{{stock["action"]}}</td>
         </tr>
-        <tr>
-          <td>{{stocks[1]["name"]}}</td>
-          <td>{{stocks[1]["qt"]}}</td>
-          <td>{{stocks[1]["form"]}}</td>
-          <td>{{stocks[1]["action"]}}</td>
-        </tr>
+        {% endfor %}
         <form action="http://google.com">
         <input type="submit" value="Add new drug" />
         </form>

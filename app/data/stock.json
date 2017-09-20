@@ -1,0 +1,9 @@
+[{"name":"Spasmalgon","qt":"1","form":"Tablet","action":"Spasmolytic drugs"},
+{"name":"Bronchophyt","qt":"2","form":"Tea bags","action":"Cough treatment"},
+{"name":"Analgin","qt":"1","form":"Tablets","action":"Analgesic and antipyretic"},
+{"name":"Mezym","qt":"8","form":"Tablets","action":"Enzyme for improving digestion"},
+{"name":"Nurofen","qt":"2","form":"Tablets","action":"Painkiller,help to reduce inflammation"},
+{"name":"Visine","qt":"1","form":"Bottle","action":"Eye drops"},
+{"name":"Theracough","qt":"2","form":"Bottles","action":"Cough syrop"},
+{"name":"Otrivin","qt":"1","form":"spray","action":"Nasal spray"},
+{"name":"Sudocrem","qt":"1","form":"Bottle","action":"Antibacterial cream"}]
