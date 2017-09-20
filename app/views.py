@@ -14,3 +14,13 @@ def show_time():
         'pink.html',
         now=time.strftime("%c")
     )
+
+@application.route('/stock')
+def stock():
+    return render_template(
+        'stock.html',
+        name="Spasmalgon",
+        qt="1",
+        form="Tablet",
+        action="Spasmolytic drugs"
+    )

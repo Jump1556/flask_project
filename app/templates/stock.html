@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Medical reminder</title>
+      <link href="Med_reminder_style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+  <a class="links" id="back-button" href="Medical_reminder.html">Back to the home page</a>
+    <h1>My Medicine Stock</h1>
+    <div class="text">
+      <p>This part of application shows what medicine do you have and its amount.</p>
+      <p>To add new item just press the button "Add new drug"</p>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Quantity</th>
+          <th>Form</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{name}}</td>
+          <td>{{qt}}</td>
+          <td>{{form}}</td>
+          <td>{{action}}</td>
+        </tr>
+        <form action="http://google.com">
+        <input type="submit" value="Add new drug" />
+        </form>
+  </body>
+</html>
